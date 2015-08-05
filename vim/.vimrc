@@ -1,6 +1,4 @@
 execute pathogen#infect()
-call pathogen#helptags()
-
 syntax enable
 
 let mapleader = ","
@@ -9,6 +7,8 @@ syntax on
 autocmd VimEnter * NERDTree " Open nerdtree by default
 autocmd VimEnter * wincmd p " Move cursor main window
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags " enable html autocomplete for all html files.
+
+
 
 " Better command-line completion
 set wildmenu
@@ -35,9 +35,13 @@ set autoread
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
@@ -45,6 +49,12 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Bundle 'mileszs/ack.vim'
+
+Plugin 'scrooloose/nerdtree'
+
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
