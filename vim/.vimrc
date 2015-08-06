@@ -54,6 +54,7 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
+Plugin 'tpope/vim-rails'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
