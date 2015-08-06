@@ -9,6 +9,7 @@ For now, if you need vim to work with the pushed configurations:
 2. `cd config_files`
 3. `ln -s $PWD/vim/.vimrc ~/.vimrc`
 4. `ln -s $PWD/vim/.vim ~/`
+5. `Open vim using vim . and when in view mode type :PluginInstall`
 
 And you are done! All the configurations should work fine. If you have any trouble using or following the instructions, please donot hesitate to post an issue. I will try and help as soon as I can.
 
