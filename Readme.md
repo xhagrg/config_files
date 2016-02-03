@@ -5,7 +5,7 @@ If you wish to use this configuration or some modified version of it, you can ju
 
 For now, if you need vim to work with the pushed configurations:
 
-1. `git clone git@github.com:xha003/config_files.git --recursive`
+1. `git clone git@github.com:xhagrg/config_files.git --recursive`
 2. `cd config_files`
 3. `ln -s $PWD/vim/.vimrc ~/.vimrc`
 4. `ln -s $PWD/vim/.vim ~/`
